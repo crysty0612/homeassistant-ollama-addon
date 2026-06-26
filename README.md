@@ -12,8 +12,6 @@
 # Ollama Addon for Home Assistant WITH iGPU and VULKAN support enabled.
 Fork from: [SirUli]: https://github.com/SirUli/homeassistant-ollama-addon
 
-Q4 Quantization for context is enabled by default. (Why?! Your compute unit can, most likely, afford it if you can run any decent model. But RAM nowadays however...). It is still smart enough.
-
 A [Home Assistant](https://home-assistant.io) add-on repository for [Ollama](https://ollama.com).
 
 [![Add Addon to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https://github.com/crysty0612/homeassistant-ollama-addon)
