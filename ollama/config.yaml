@@ -33,6 +33,7 @@ options:
   OLLAMA_VULKAN: 1
   OLLAMA_NUM_CTX: 4096
   OLLAMA_NUM_THREADS: 4
+  OLLAMA_NUM_BATCH: 128
   OLLAMA_MAX_QUEUE: 64
   gpus: all
 schema:
@@ -46,7 +47,8 @@ schema:
   OLLAMA_NUM_CTX: int
   OLLAMA_NUM_THREADS: int
   OLLAMA_IGPU_ENABLE: int
-  OLLAMA_NUM_THREAD: int?
+  OLLAMA_NUM_THREADS: int?
+  OLLAMA_NUM_BATCH: int?
   OLLAMA_VULKAN: bool?
   # https://github.com/ollama/ollama/issues/13108
   GGML_VK_DISABLE_INTEGER_DOT_PRODUCT: bool?
