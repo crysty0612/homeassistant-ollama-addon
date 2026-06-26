@@ -14,7 +14,7 @@ To download any models either use the API of Ollama or integrate with the Home A
 
 Use the following data:
 
-- URL: `http://76e18fb5-ollama:11434`
+- URL: `http://5f9497d8-ollama:11434`
 
 If you want to change the model, delete the integration (not the addon!) and restart the process for the configuration of the integration.
 
