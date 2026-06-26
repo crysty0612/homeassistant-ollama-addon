@@ -24,11 +24,13 @@ ports_description:
 options:
   OLLAMA_MODELS: /share/ollama
   OLLAMA_KEEP_ALIVE: -1
-  OLLAMA_KV_CACHE_TYPE: q8_0
-  OLLAMA_FLASH_ATTENTION: 0
+  OLLAMA_KV_CACHE_TYPE: q4_0
+  OLLAMA_FLASH_ATTENTION: 1
   OLLAMA_MAX_LOADED_MODELS: 1
   OLLAMA_NUM_PARALLEL: 1
   OLLAMA_ORIGINS: ""
+  OLLAMA_IGPU_ENABLE: 1
+  OLLAMA_VULKAN: 1
   gpus: all
 schema:
   OLLAMA_CONTEXT_LENGTH: int?
@@ -38,6 +40,7 @@ schema:
   OLLAMA_KV_CACHE_TYPE: list(f16|q8_0|q4_0)
   OLLAMA_MAX_LOADED_MODELS: int
   OLLAMA_NUM_PARALLEL: int
+  OLLAMA_IGPU_ENABLE: int
   OLLAMA_NUM_THREAD: int?
   OLLAMA_VULKAN: bool?
   # https://github.com/ollama/ollama/issues/13108
@@ -56,6 +59,7 @@ backup_exclude:
   - "ollama/**"
 devices:
   - /dev/dri/renderD128
+  - /dev/dri
   - /dev/apex_0
   - /dev/apex_1
   - /dev/apex_2
